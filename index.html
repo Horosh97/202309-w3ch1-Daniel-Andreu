@@ -14,6 +14,41 @@
 </head>
 
 <body>
+  <form novalidate>
+    <h1 class="main-title">FORMULARIO EMAIL</h1>
+    <label class="form-content">
+      Remitente:
+      <input type="email" value="poor-student@isdicoders.com" required>
+    </label>
+    <label class="form-content">
+      Destinatario:
+      <input type="email" required>
+    </label>
+    <label class="form-content">
+      Asunto:
+      <input type="text" required>
+    </label>
+    <label class="form-content">
+      Cuerpo:
+      <textarea name="Cuerpo" id="" cols="30" rows="10" required></textarea>
+    </label>
+    <label class="form-content">
+      Adjuntar archivo:
+      <input type="file">
+    </label>
+    <div class="form-content">
+      <label>
+        <input type="checkbox">
+        Programar envío
+      </label>
+    </div>
+    <label class="form-content">
+      Fecha y hora de envío
+      <input type="datetime-local">
+    </label>
+    <button class="button-content">Enviar</button>
+
+  </form>
 
 </body>
 

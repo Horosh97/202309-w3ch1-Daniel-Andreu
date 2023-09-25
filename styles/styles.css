@@ -1,5 +1,5 @@
 :root {
-  --main-color: #fff690;
+  --main-color: #a0ffef;
   --second-color: #fffeef66;
   --main-font: "Montserrat", sans-serif;
 }
@@ -12,4 +12,55 @@
 
 html {
   font-family: var(--main-font);
+}
+
+body {
+  margin: 0;
+  padding: 30px;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+}
+
+input,
+select {
+  font-size: medium;
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: wavy;
+  margin: 10px 15px 30px 15px;
+  gap: 15px;
+  width: 300px;
+  align-items: center;
+}
+
+.form-container {
+  padding: 20px 20px 20px 20px;
+  border-radius: 15px;
+  background-color: var(--second-color);
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px 15px 30px 15px;
+  gap: 15px;
+  width: 300px;
+}
+
+.button-content {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-color);
+  align-items: center;
+  margin: 10px 15px 30px 15px;
+  gap: 15px;
+  width: 300px;
 }
