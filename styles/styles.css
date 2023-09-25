@@ -1,0 +1,15 @@
+:root {
+  --main-color: #fff690;
+  --second-color: #fffeef66;
+  --main-font: "Montserrat", sans-serif;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--main-font);
+}
