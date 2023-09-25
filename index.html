@@ -9,44 +9,46 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
+  <script src="js/validate.js" defer></script>
+  <script src="js/index.js" defer></script>
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
   <title>Formulario Email</title>
 </head>
 
 <body>
-  <form novalidate>
+  <form class="form" novalidate>
     <h1 class="main-title">FORMULARIO EMAIL</h1>
     <label class="form-content">
       Remitente:
-      <input type="email" value="poor-student@isdicoders.com" required>
+      <input type="email" value="poor-student@isdicoders.com" id="#idSender" required>
     </label>
     <label class="form-content">
       Destinatario:
-      <input type="email" required>
+      <input type="email" id="#idRecipient" required>
     </label>
     <label class="form-content">
       Asunto:
-      <input type="text" required>
+      <input type="text" id="#idIssue" required>
     </label>
     <label class="form-content">
       Cuerpo:
-      <textarea name="Cuerpo" id="" cols="30" rows="10" required></textarea>
+      <textarea name="Cuerpo" id="#idBody" cols="30" rows="10" required></textarea>
     </label>
     <label class="form-content">
       Adjuntar archivo:
-      <input type="file">
+      <input type="file" id="#idAddFile">
     </label>
     <div class="form-content">
       <label>
-        <input type="checkbox">
+        <input type="checkbox" id="#idCheckbox">
         Programar envío
       </label>
     </div>
     <label class="form-content">
       Fecha y hora de envío
-      <input type="datetime-local">
+      <input type="datetime-local" id="#idDateAndTime">
     </label>
-    <button class="button-content">Enviar</button>
+    <button class="button-content" id="idButton">Enviar</button>
 
   </form>
 

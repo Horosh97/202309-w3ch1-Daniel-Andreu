@@ -40,6 +40,10 @@ select {
   align-items: center;
 }
 
+.form-data {
+  padding: 10px;
+}
+
 .form-container {
   padding: 20px 20px 20px 20px;
   border-radius: 15px;
