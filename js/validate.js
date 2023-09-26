@@ -1,12 +1,12 @@
-const formElement = document.querySelector(".form");
-const senderInputElement = formElement.querySelector("#idSender");
-const recipientInputElement = formElement.querySelector("#idRecipient");
-const issueInputElement = formElement.querySelector("#idIssue");
-const bodyInputElement = formElement.querySelector("#idBody");
-const addFileInputElement = formElement.querySelector("#idAddFile");
-const checkboxInputElement = formElement.querySelector("#idCheckbox");
-const dateAndTimeInputElement = formElement.querySelector("#idDateAndTime");
-const buttonInputElement = formElement.querySelector("#idButton");
+const targetElement = document.querySelector("form");
+const senderInputElement = targetElement.querySelector("#idSender");
+const recipientInputElement = targetElement.querySelector("#idRecipient");
+const issueInputElement = targetElement.querySelector("#idIssue");
+const bodyInputElement = targetElement.querySelector("#idBody");
+const addFileInputElement = targetElement.querySelector("#idAddFile");
+const checkboxInputElement = targetElement.querySelector("#idCheckbox");
+const dateAndTimeInputElement = targetElement.querySelector("#idDateAndTime");
+const buttonInputElement = targetElement.querySelector("#idButton");
 
 let sender;
 let recipient;
@@ -16,11 +16,10 @@ let file;
 let programmed;
 let dateAndTime;
 
-formElement.addEventListener("input", (event) => {
+targetElement.addEventListener("input", (event) => {
   switch (event.target) {
     case senderInputElement:
       sender = event.target.value;
-      console.log(sender);
       break;
     case recipientInputElement:
       recipient = event.target.value;
@@ -42,3 +41,7 @@ formElement.addEventListener("input", (event) => {
       break;
   }
 });
+
+const validateForm = () => {
+  console.log(sender, recipient, issue, body);
+};

@@ -16,39 +16,39 @@
 </head>
 
 <body>
-  <form class="form" novalidate>
+  <form class="form " novalidate>
     <h1 class="main-title">FORMULARIO EMAIL</h1>
     <label class="form-content">
       Remitente:
-      <input type="email" value="poor-student@isdicoders.com" id="#idSender" required>
+      <input class="input-content" type="email" value="poor-student@isdicoders.com" id="idSender">
     </label>
     <label class="form-content">
       Destinatario:
-      <input type="email" id="#idRecipient" required>
+      <input class="input-content" type="email" id="idRecipient" required>
     </label>
     <label class="form-content">
       Asunto:
-      <input type="text" id="#idIssue" required>
+      <input class="input-content" type="text" id="idIssue" required>
     </label>
     <label class="form-content">
       Cuerpo:
-      <textarea name="Cuerpo" id="#idBody" cols="30" rows="10" required></textarea>
+      <textarea class="input-content" name="Cuerpo" id="idBody" cols="30" rows="10" required></textarea>
     </label>
     <label class="form-content">
       Adjuntar archivo:
-      <input type="file" id="#idAddFile">
+      <input class="input-content" type="file" id="idAddFile">
     </label>
     <div class="form-content">
       <label>
-        <input type="checkbox" id="#idCheckbox">
+        <input type="checkbox" id="idCheckbox">
         Programar envío
       </label>
     </div>
     <label class="form-content">
       Fecha y hora de envío
-      <input type="datetime-local" id="#idDateAndTime">
+      <input class="input-content" type="datetime-local" id="idDateAndTime">
     </label>
-    <button class="button-content" id="idButton">Enviar</button>
+    <button class="button-content input-content" type="submit" id="idButton">Enviar</button>
 
   </form>
 
